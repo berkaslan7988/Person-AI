@@ -1,0 +1,13 @@
+[project]
+name = "person-ai"
+version = "2.1.0"
+description = "Multi-Character AI Chat App — chat with custom AI personas using Gemini, Groq, DeepSeek, and OpenRouter"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.flet]
+app.icon = "icon.png"
+app.product = "Person AI"
+app.company = ""
+app.bundle_id = "com.personai.app"

@@ -1,0 +1,18 @@
+# Exclude from APK build
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.dist-info/
+tests/
+test/
+*.test.py
+test_*.py
+temp_apk/
+temp_app_zip/
+build/
+.idea/
+.git/
+*.db
+*.key
+*.pem
