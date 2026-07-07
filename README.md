@@ -81,7 +81,6 @@ flet build apk
 ```
 Person AI/
 ├── main.py                  # Entry point
-├── build/apk/               # Pre-built Android APK
 ├── person_ai/
 │   ├── app.py               # App shell, routing, splash screen
 │   ├── config.py            # API keys, model list, settings
