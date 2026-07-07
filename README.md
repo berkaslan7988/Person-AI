@@ -6,8 +6,6 @@ A **multi-character AI chat app** built with [Flet](https://flet.dev). Create cu
 
 ## 📱 Android
 
-A pre-built APK is available in the [`build/apk/`](build/apk/) folder — no Python or build tools required.
-
 1. Download `Person AI.apk`
 2. Enable **Install from unknown sources** on your device
 3. Install and open the app
