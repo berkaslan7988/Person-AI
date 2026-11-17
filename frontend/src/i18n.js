@@ -12,6 +12,7 @@ const S = {
   you: ['Sen', 'You'],
   messages_count: ['mesaj', 'messages'],
   sessions_count: ['sohbet', 'chats'],
+  session_count_one: ['sohbet', 'chat'],
   empty_chat: ['Boş sohbet', 'Empty chat'],
   loading: ['Yükleniyor', 'Loading'],
 

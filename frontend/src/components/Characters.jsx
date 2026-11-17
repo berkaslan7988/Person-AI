@@ -248,7 +248,7 @@ function CharacterCard({ c, onOpen, i }) {
         <div className="card-foot">
           <span className="card-last">
             {c.last_session ? (
-              <>{c.session_count} {t('sessions_count')} · {relTime(c.last_session.updated_at, lang)}</>
+              <>{c.session_count} {t(c.session_count === 1 ? 'session_count_one' : 'sessions_count')} · {relTime(c.last_session.updated_at, lang)}</>
             ) : t('new_chat')}
           </span>
           <div className="row gap-4" onClick={(e) => e.stopPropagation()}>

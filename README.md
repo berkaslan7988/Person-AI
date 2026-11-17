@@ -4,6 +4,11 @@ A self-hosted character roleplay chat app. You create characters (or import Sill
 write the story together. Everything runs on your own computer: a small Python server with no dependencies, a React
 interface, and a local SQLite database.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screens/chat-dark.png">
+  <img alt="A chat with Haruki, one of the starter characters" src="docs/screens/chat-light.png">
+</picture>
+
 ## Features
 
 - **Characters.** Create cards with a personality, scenario, greeting, alternate greetings, example lines and tags.
@@ -20,6 +25,31 @@ interface, and a local SQLite database.
 - **Interface.** Turkish and English, light and dark themes, custom accent colour, JSON export of all your data.
 - **Optional remote access** for you and people you invite, through Cloudflare Tunnel and Cloudflare Access
   (see below).
+
+## Screenshots
+
+**Character gallery** with tag filters, search and the four starter characters.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screens/characters-dark.png">
+  <img alt="Character gallery" src="docs/screens/characters-light.png">
+</picture>
+
+**Landing page** with a live demo of the cast.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screens/landing-dark.png">
+  <img alt="Landing page" src="docs/screens/landing-light.png">
+</picture>
+
+**Settings**: language, theme and accent colour, models, profile and data.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screens/settings-dark.png">
+  <img alt="Settings, appearance section" src="docs/screens/settings-light.png">
+</picture>
+
+The images follow your GitHub theme. `tools/screenshots.py` regenerates them from a throwaway demo account.
 
 ## Requirements
 
@@ -106,6 +136,8 @@ core/starter_cards.py  the starter characters
 frontend/src/        React interface
 tests/               unit and integration tests
 deploy/              example tunnel config
+tools/screenshots.py regenerates the README screenshots (needs Playwright)
+docs/screens/        README screenshots, light and dark
 ```
 
 ## License
