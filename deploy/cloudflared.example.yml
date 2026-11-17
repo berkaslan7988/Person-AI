@@ -1,0 +1,15 @@
+# Copy into your local cloudflared configuration and replace every placeholder.
+# Keep tunnel credentials private; configure Cloudflare Access for the hostname.
+tunnel: <TUNNEL-ID>
+credentials-file: 'C:\Users\<USER>\.cloudflared\<TUNNEL-ID>.json'
+
+ingress:
+  - hostname: <your-host.example.com>
+    service: http://127.0.0.1:8550
+    originRequest:
+      access:
+        required: true
+        teamName: <team-name>
+        audTag:
+          - <AUD-tag>
+  - service: http_status:404

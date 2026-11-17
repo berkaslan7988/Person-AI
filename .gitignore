@@ -1,33 +1,22 @@
-# API Keys & Secrets
+# secrets and local data
 .env
-*.key
-*.pem
-.personai_settings.json
-
-# Database (user data — do not commit)
+data/
 *.db
-person_ai.db
-
-# IDE
-.idea/
-.vscode/
-
-# Build artifacts (keep build/apk/ for pre-built releases)
-build/
-!build/apk/
-!build/apk/*.apk
+*.db-shm
+*.db-wal
+*.pem
+.cloudflared/
+# private
+finetune/
+# build output and dependencies
+static/
+frontend/node_modules/
+frontend/dist/
 __pycache__/
 *.pyc
-*.pyo
-.flutter-plugins
-.flutter-plugins-dependencies
-
-# OS
+.venv/
+# OS and editors
 .DS_Store
 Thumbs.db
-
-# Flet cache
-.flet/
-
-# Flet runtime storage (created by `flet run`)
-storage/
+.vscode/
+.idea/
