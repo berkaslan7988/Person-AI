@@ -49,6 +49,11 @@ PROVIDERS = {
         "env": "DEEPSEEK_API_KEY",
         "key_url": "https://platform.deepseek.com/api_keys",
     },
+    "demonroute": {
+        "label": "Demon Route",
+        "env": "DEMONROUTE_API_KEY",
+        "key_url": "https://demonroute.com/dashboard",
+    },
 }
 
 # Same model list as the original app (label → provider/id).
@@ -59,6 +64,9 @@ MODELS = {
     "DeepSeek V3.2": {"provider": "deepseek", "id": "deepseek-chat"},
     "DeepSeek V4 Pro": {"provider": "openrouter", "id": "deepseek/deepseek-v4-pro"},
     "Nemotron 3 Ultra 550B": {"provider": "openrouter", "id": "nvidia/nemotron-3-ultra-550b-a55b:free"},
+    "Demon Route: Euryale v2.3 70B": {"provider": "demonroute", "id": "Sao10K/L3.3-70B-Euryale-v2.3"},
+    "Demon Route: Cydonia 24B v4.3 heretic": {"provider": "demonroute", "id": "coder3101/Cydonia-24B-v4.3-heretic-v4"},
+    "Demon Route: PaintedFantasy 24B": {"provider": "demonroute", "id": "zerofata/MS3.2-PaintedFantasy-v4.1-24B"},
 }
 
 # i18n key of the badge shown next to each provider's models.
@@ -67,6 +75,7 @@ PROVIDER_BADGE = {
     "groq": "badge_fast",
     "openrouter": "badge_free",
     "deepseek": "badge_smart",
+    "demonroute": "badge_smart",
     "ollama": "badge_local",
 }
 
@@ -119,6 +128,7 @@ PROVIDER_URLS = {
     "groq": "https://api.groq.com/openai/v1/chat/completions",
     "openrouter": "https://openrouter.ai/api/v1/chat/completions",
     "deepseek": "https://api.deepseek.com/chat/completions",
+    "demonroute": "https://api.demonroute.com/v1/chat/completions",
 }
 
 

@@ -1,4 +1,4 @@
-"""Person AI Web — streaming chat for Gemini, Groq, OpenRouter and DeepSeek (pure urllib).
+"""Person AI Web — streaming chat for Gemini, Groq, OpenRouter, DeepSeek and Demon Route (pure urllib).
 
 stream_chat(...) yields text chunks and raises a ProviderError subclass on failure.
 Set PAI_FAKE=1 in the environment to get canned replies (for offline UI testing).
@@ -135,7 +135,7 @@ def _sse_data(resp, cancel):
             pass
 
 
-# ── OpenAI-compatible (Groq, OpenRouter, DeepSeek) ───────────
+# ── OpenAI-compatible (Groq, OpenRouter, DeepSeek, Demon Route) ───────────
 def _stream_openai(provider, model_id, messages, system, params, cancel):
     key = get_key(provider)
     if not key:

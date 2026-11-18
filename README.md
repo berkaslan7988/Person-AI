@@ -18,7 +18,7 @@ interface, and a local SQLite database.
   *roleplay formatting* for actions.
 - **Long-term memory.** Older messages are summarised automatically once they fall out of the context window, and
   you can pin notes the character should never forget.
-- **Models.** Google Gemini, Groq, DeepSeek and OpenRouter in the cloud, or local models through
+- **Models.** Google Gemini, Groq, DeepSeek, OpenRouter and Demon Route in the cloud, or local models through
   [Ollama](https://ollama.com) (no internet, no API costs). If a cloud model hits its rate limit, the app falls back to
   the next one automatically.
 - **Accounts.** Username and password, no email. Each account has its own characters, chats and settings.
